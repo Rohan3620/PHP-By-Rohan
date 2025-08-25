@@ -14,7 +14,7 @@
 
         .box {
             background: rgb(129, 181, 249);
-            width: 50%;
+            width: 30%;
             padding: 20px;
             margin: 50px auto;
             border-radius: 20px;
@@ -29,7 +29,7 @@
         }
 
         form input {
-            width: 90%;
+            width: 95%;
             padding: 8px;
             margin-top: 5px;
             border: none;
@@ -105,10 +105,10 @@
             echo "<p style='text-align:center; font-weight:bold;'>Congratulations $name! <br> You are eligible for a Driving License.</p>";
 
         } else {
-            echo "<p style='text-align:center; font-weight:bold; color:Red'>Sorry $name, you are vision is not good  for a driving.</p>";
+            echo "<p style='text-align:center; font-weight:bold; color:Red'>Sorry $name,you are vision is not good  for a driving.</p>";
         }
     } else if ($age < 18 || $age > 60) {
-     echo "<p style='text-align:center; font-weight:bold; color:Red'>Sorry $name, you are not eligible for a Driving License.your age is $age and minumum age 18</p>";
+     echo "<p style='text-align:center; font-weight:bold; color:Red'>Sorry $name,you are not eligible for a Driving License.<br>your age is $age and minumum age 18</p>";
     }
     ?>
 </body>
