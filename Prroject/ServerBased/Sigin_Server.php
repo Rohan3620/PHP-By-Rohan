@@ -24,6 +24,9 @@
             <label for="city">City</label>
             <input type="text" name="city" id="city" required>
 
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
             <label for="username">Username</label>
             <input type="text" name="username" id="username" required>
 
@@ -32,14 +35,15 @@
 
             <button type="submit" class="btn">Sign In</button>
         </form>
-
         <?php
         $insert = false;
         $server = "localhost";
-        $username = "root";
-        $password = "";
+        $dbusername = "root";
+        $dbpassword = "";
         $database = "PARIVAHAN";
-        $con = mysqli_connect($server, $username, $password, $database);
+
+        $con = mysqli_connect($server, $dbusername, $dbpassword, $database);
+
         if (!$con) {
             die("Connection failed: " . mysqli_connect_error());
         } else {
@@ -48,25 +52,40 @@
                 $city = $_POST["city"];
                 $username = $_POST["username"];
                 $password = $_POST["password"];
+                $email = $_POST["email"];
 
-                $sql = "INSERT INTO `signin` (`sno`, `name`, `city`, `username`, `password`, `time`) 
-                VALUES (NULL, '$name', '$city', '$username', '$password', current_timestamp())";
+                $sql = "INSERT INTO `signin` (`sno`, `name`, `city`, `username`, `password`, `time`, `email`) 
+                VALUES (NULL, '$name', '$city', '$username', '$password', current_timestamp(), '$email')";
 
-                if ($con->query($sql) == true) {
+                if ($con->query($sql) === TRUE) {
                     $insert = true;
+
+                
+                    $to = $email; 
+                    $subject = "Welcome to PARIVAHAN SEWA";
+                    $message = "Hello $name,\n\nThank you for signing up!\n\nYou can now use all our driving licence services.\n\nRegards,\nPARIVAHAN SEWA Team";
+                    $headers = "From: no-reply@parivahan.com";
+
+                    if (mail($to, $subject, $message, $headers)) {
+                        echo "<p>Email sent to $email successfully!</p>";
+                    } else {
+                        echo "<p>Failed to send email.</p>";
+                    }
+
+                    header("Location: main_Server.php");
+                    exit();
+
                 } else {
-                    echo "ERROR: $sql<br> $con->error";
+                    echo "ERROR: $sql <br> $con->error";
                 }
-
-
             }
         }
+
         $con->close();
-        if ($insert == true) {
-            header("Location:main_Server.php");
-            exit();
-        }
         ?>
+
+
+
 
     </div>
 </body>
