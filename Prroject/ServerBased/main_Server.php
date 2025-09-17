@@ -35,10 +35,14 @@
     <?php
 
     error_reporting(E_ERROR | E_PARSE);
-    $server = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "PARIVAHAN";
+
+    $insert = false;
+    $server = "sql311.infinityfree.com";
+    $dbusername = "if0_39950036";
+    $dbpassword = "Rcjpa1exs4UcOUS";
+    $database = "if0_39950036_PARIVAHAN";
+
+
     $con = mysqli_connect($server, $username, $password, $database);
     if (!$con) {
         die("Connection error" . mysqli_connect_error());
@@ -55,7 +59,7 @@
             if ($age >= 18 && $age <= 60) {
                 if ($eyesight >= 25) {
                     echo "<p class='success'>🎉 Congratulations $name! <br> You are eligible for a Driving License.</p>";
-                    
+
                     $sql = "INSERT INTO `dl_data` (`sno`, `Name`, `DOB`, `EyeSight`, `Time`) 
             VALUES (NULL, '$name', '$DOB', '$eyesight', current_timestamp());";
                     mysqli_query($con, $sql);

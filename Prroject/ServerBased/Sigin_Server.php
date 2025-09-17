@@ -37,10 +37,10 @@
         </form>
         <?php
         $insert = false;
-        $server = "localhost";
-        $dbusername = "root";
-        $dbpassword = "";
-        $database = "PARIVAHAN";
+        $server = "sql311.infinityfree.com";
+        $dbusername = "if0_39950036";
+        $dbpassword = "Rcjpa1exs4UcOUS";
+        $database = "if0_39950036_PARIVAHAN";
 
         $con = mysqli_connect($server, $dbusername, $dbpassword, $database);
 

@@ -29,9 +29,13 @@
 
         <?php
         $insert = false;
-        $server = "localhost";
-        $username = "root";
-        $password = "";
+        $server = "sql311.infinityfree.com";
+        $dbusername = "if0_39950036";
+        $dbpassword = "Rcjpa1exs4UcOUS";
+        $database = "if0_39950036_PARIVAHAN";
+
+
+
         $database = "PARIVAHAN";
         $con = mysqli_connect($server, $username, $password, $database);
         if (!$con) {
