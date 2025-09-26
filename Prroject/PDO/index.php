@@ -28,26 +28,25 @@
         </form>
 
         <?php
-         $insert = false;
-        $server = "localhost";   
-        $dbusername = "root";    
-        $dbpassword = "";        
-        $database = "PARIVAHAN"; 
-        $con = mysqli_connect($server, $dbusername, $dbpassword, $database);
-         
+        $dsn = "mysql:host=localhost;dbname=PARIVAHAN;charset=utf8mb4";
+        $dbusername = "root";
+        $dbpassword = "";
 
-       
-        if (!$con) {
-            die("Connection failed: " . mysqli_connect_error());
-        } else {
+        try {
+            $pdo = new PDO($dsn, $dbusername, $dbpassword);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+         
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $username = $_POST["username"];
                 $password = $_POST["password"];
 
-                $sql = "SELECT * FROM signin WHERE username='$username' AND password='$password'";
-                $result = mysqli_query($con, $sql);
+                // Use prepared statement to prevent SQL injection
+                $stmt = $pdo->prepare("SELECT * FROM signin WHERE username = :username AND password = :password");
+                $stmt->bindParam(':username', $username);
+                $stmt->bindParam(':password', $password);
+                $stmt->execute();
 
-                if (mysqli_num_rows($result) == 1) {
+                if ($stmt->rowCount() == 1) {
                     header("Location: main_Server.php");
                     exit();
                 } else {
@@ -55,6 +54,8 @@
                     exit();
                 }
             }
+        } catch (PDOException $e) {
+            echo "Connection failed: " . $e->getMessage();
         }
         ?>
 

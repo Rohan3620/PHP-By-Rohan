@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Example</title>
+    <title>Parivahan sewa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,11 +35,10 @@
     <?php
     error_reporting(E_ERROR | E_PARSE);
 
-    $insert = false;
-    $server = "localhost";  
-    $dbusername = "root";    
-    $dbpassword = "";        
-    $database = "parivahan";
+    $server = "sql311.infinityfree.com";
+    $dbusername = "if0_39950036";
+    $dbpassword = "Rcjpa1exs4UcOUS";
+    $database = "if0_39950036_PARIVAHAN";
 
     
     $con = mysqli_connect($server, $dbusername, $dbpassword, $database);

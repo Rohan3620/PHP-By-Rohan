@@ -37,11 +37,13 @@
         </form>
         <?php
         $insert = false;
-        $server = "sql311.infinityfree.com";
-        $dbusername = "if0_39950036";
-        $dbpassword = "Rcjpa1exs4UcOUS";
-        $database = "if0_39950036_PARIVAHAN";
 
+       
+        $server = "localhost";   // local server
+        $dbusername = "root";    // default XAMPP/WAMP username
+        $dbpassword = "";        // default password is empty
+        $database = "PARIVAHAN"; // your local DB name
+        
         $con = mysqli_connect($server, $dbusername, $dbpassword, $database);
 
         if (!$con) {
@@ -59,19 +61,6 @@
 
                 if ($con->query($sql) === TRUE) {
                     $insert = true;
-
-                
-                    $to = $email; 
-                    $subject = "Welcome to PARIVAHAN SEWA";
-                    $message = "Hello $name,\n\nThank you for signing up!\n\nYou can now use all our driving licence services.\n\nRegards,\nPARIVAHAN SEWA Team";
-                    $headers = "From: no-reply@parivahan.com";
-
-                    if (mail($to, $subject, $message, $headers)) {
-                        echo "<p>Email sent to $email successfully!</p>";
-                    } else {
-                        echo "<p>Failed to send email.</p>";
-                    }
-
                     header("Location: main_Server.php");
                     exit();
 
@@ -83,10 +72,6 @@
 
         $con->close();
         ?>
-
-
-
-
     </div>
 </body>
 
