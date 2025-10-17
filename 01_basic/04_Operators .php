@@ -33,6 +33,8 @@
     echo "". ($myvar ?"true":"false") ."";  
     echo "<br>";
     echo PI*7;
+   var_dump(10=="10");
+    var_dump(10==="10");
     ?>
 </body>
 

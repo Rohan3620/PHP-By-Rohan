@@ -13,8 +13,15 @@
     </div>
     <?php
     $name = "Rohan";
-    echo $name;
-   ?>
+    echo $name."<br>";
+    $Test = "Name";
+    $$Test = "Ram"; 
+    echo $Name."<br>";   
+    echo $$Test."<br>"; 
+    
+   
+    
+    ?>
 </body>
 
 </html>
