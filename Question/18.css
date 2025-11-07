@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 40px 50px;
+    margin-top: 60px;
+    width: 550px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #444;
+    margin-top: 25px;
+    border-left: 5px solid #6C63FF;
+    padding-left: 10px;
+}
+
+.output {
+    font-size: 16px;
+    color: #333;
+}
+
+.success {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.error {
+    color: #d32f2f;
+    font-weight: 600;
+}
+
+/* File content display box */
+.file-content {
+    background: #f3f6ff;
+    border: 1px solid #c5cae9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    color: #1a237e;
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    white-space: pre-wrap;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+}

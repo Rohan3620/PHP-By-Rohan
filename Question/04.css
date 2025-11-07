@@ -1,0 +1,85 @@
+/* 🌼 Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 🌿 Heading */
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* 💫 Form Container */
+form {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+/* ✨ Inputs and Select Box */
+input[type="number"], select {
+    padding: 8px;
+    margin: 5px 0 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* 🌈 Submit Button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* 🧮 Table Styling */
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+table, th, td {
+    border: 2px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* 🌻 Caption */
+caption {
+    caption-side: top;
+    font-weight: bold;
+    padding: 10px;
+    color: #333;
+}

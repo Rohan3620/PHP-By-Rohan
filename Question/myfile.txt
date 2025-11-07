@@ -1,0 +1,2 @@
+Hello, this is my first file created using PHP.
+PHP makes file handling easy!!

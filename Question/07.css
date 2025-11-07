@@ -1,0 +1,85 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full-screen center layout */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Heading style */
+h1 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* The small centered box */
+.box {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    padding: 25px 30px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Label text */
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Input field */
+input[type="number"] {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #66a6ff;
+    border-radius: 6px;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #005eff;
+    box-shadow: 0 0 6px #66a6ff;
+}
+
+/* Submit button */
+input[type="submit"] {
+    margin-top: 15px;
+    background: #66a6ff;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #005eff;
+}
+
+/* Result text */
+h3 {
+    margin-top: 20px;
+    color: #444;
+    font-weight: 500;
+}

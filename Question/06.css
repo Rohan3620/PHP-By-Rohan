@@ -1,0 +1,53 @@
+/* 🌿 General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0;
+}
+
+/* 🌼 Main Container */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: auto;
+}
+
+/* 💫 Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 🩵 Output Box */
+.output {
+    background-color: #e7f3ff;
+    border-left: 5px solid #2196F3;
+    padding: 15px;
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    border-radius: 5px;
+}
+
+/* ✨ Optional Styling for Print_r */
+.output pre {
+    background-color: #eef7ff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* 💙 Small Animation for Visual Appeal */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container, .output {
+    animation: fadeIn 0.7s ease-in;
+}

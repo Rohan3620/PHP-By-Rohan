@@ -1,0 +1,68 @@
+/* 🌿 General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #3a6186, #89253e);
+    color: #f9f9f9;
+    margin: 0;
+    padding: 40px;
+}
+
+/* 🌼 Heading */
+h1 {
+    text-align: center;
+    font-size: 38px;
+    color: #fff;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 💫 Container Box */
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px 35px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌈 Paragraph Text */
+p {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 12px 18px;
+    border-left: 5px solid #00e6e6;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    margin: 15px 0;
+}
+
+/* 🔔 Warning / Stop Message */
+.stop {
+    border-left: 5px solid #ff4b2b;
+    background-color: rgba(255, 75, 43, 0.2);
+    color: #ffdfdf;
+    font-weight: bold;
+}
+
+/* 🧡 Note Section */
+.note {
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    color: #e0e0e0;
+    margin-top: 25px;
+}
+
+/* ✨ Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container, p {
+    animation: fadeIn 0.6s ease-in;
+}

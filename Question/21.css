@@ -1,0 +1,49 @@
+/* General page styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Output box */
+.output {
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Success and error messages */
+.success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

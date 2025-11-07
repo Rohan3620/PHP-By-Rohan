@@ -1,0 +1,68 @@
+/* 10_Question.css */
+
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Heading styles */
+h3 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Logout link */
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff6b6b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+}
+
+a:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+}
+
+/* Subtle fade-in animation */
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

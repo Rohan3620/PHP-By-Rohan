@@ -1,0 +1,96 @@
+/* Basic page styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f7f8fa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 30px;
+    color: #444;
+}
+
+/* Upload form */
+form {
+    margin-top: 15px;
+}
+
+input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Message Styles */
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.warning {
+    color: #d48806;
+    font-weight: bold;
+}
+
+/* Image gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}

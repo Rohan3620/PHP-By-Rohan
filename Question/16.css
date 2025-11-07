@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 40px 50px;
+    width: 600px;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #444;
+    margin-top: 30px;
+    border-left: 5px solid #6C63FF;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+/* Message Styles */
+.success {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.error {
+    color: #d32f2f;
+    font-weight: 600;
+}
+
+.info {
+    color: #0277bd;
+    font-weight: 600;
+}
+
+/* File List */
+.file-list {
+    background: #f8f8ff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.file-item {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 3px;
+    background: #e8eaf6;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* File Content Display */
+.file-content {
+    background: #f1f8e9;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #c5e1a5;
+    font-size: 15px;
+    color: #222;
+    white-space: pre-wrap;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+}

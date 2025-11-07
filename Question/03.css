@@ -1,0 +1,86 @@
+/* 🌿 Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin: 0;
+}
+
+/* 🌼 Container Box */
+.container {
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌈 Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #2e8b57;
+}
+
+/* ✨ Form Style */
+form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input[type="number"],
+input[type="submit"] {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* 🧮 Table Style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 0.8s ease-in;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #e0ffff;
+}
+
+/* 🌟 Simple Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
